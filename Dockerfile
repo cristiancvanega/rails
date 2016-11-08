@@ -8,8 +8,8 @@ RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 
 
 ENV RAILS_VERSION 5.0.0.1
 
-RUN mkdir usr/src/app
+RUN mkdir /usr/src/app
 
-WORKDIR usr/src/app
+WORKDIR /usr/src/app
 
 RUN gem install rails --version "$RAILS_VERSION"
